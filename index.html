@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آرا | دانلود اپلیکیشن</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+        
+        body {
+            background-color: #0F172A;
+            color: #F8FAFC;
+            font-family: 'Yekan Bakh', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #1E293B;
+            width: 100%;
+            max-width: 440px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            padding: 24px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #F8FAFC;
+            margin: 0 0 8px 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: #94A3B8;
+            margin: 0 0 24px 0;
+        }
+
+        .tech-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 500;
+            color: #6366F1;
+            background-color: #0F172A;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 24px;
+            border: 1px solid #334155;
+        }
+
+        .download-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0F172A;
+            color: #F8FAFC;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 999px;
+            border: 1px solid #334155;
+            transition: border-color 0.2s, background-color 0.2s;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            border-color: #6366F1;
+            background-color: #1E293B;
+        }
+
+        .btn-primary {
+            background-color: #6366F1;
+            border-color: #6366F1;
+        }
+
+        .btn-primary:hover {
+            background-color: #4F46E5;
+            border-color: #4F46E5;
+        }
+
+        .btn-text {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .btn-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #94A3B8;
+        }
+
+        .btn-primary .btn-meta {
+            color: #F8FAFC;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="tech-badge">v1.0.0</div>
+        <h1>اپلیکیشن آرا</h1>
+        <p>برنامه مدیریت عادات روزانه با هوش مصنوعی</p>
+        
+        <div class="download-group">
+            <a href="#" class="btn btn-primary">
+                <span class="btn-text">دانلود نسخه iOS</span>
+                <span class="btn-meta">App Store</span>
+            </a>
+            
+            <a href="#" class="btn">
+                <span class="btn-text">دانلود نسخه اندروید</span>
+                <span class="btn-meta">Direct APK</span>
+            </a>
+            
+            <a href="#" class="btn">
+                <span class="btn-text">ورود به نسخه وب (PWA)</span>
+                <span class="btn-meta">Run in Browser</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

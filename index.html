@@ -1,139 +1,278 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html class="dark" dir="rtl" lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>آرا | دانلود اپلیکیشن</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>آرا | ردیاب هوشمند عادات</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#051424",
+                        "outline": "#908fa0",
+                        "on-surface-variant": "#c7c4d7",
+                        "on-primary-container": "#0d0096",
+                        "on-tertiary-container": "#451f00",
+                        "tertiary": "#ffb783",
+                        "primary-container": "#8083ff",
+                        "surface-container-low": "#0d1c2d",
+                        "surface-variant": "#273647",
+                        "on-primary": "#1000a9",
+                        "surface-container-lowest": "#010f1f",
+                        "error-container": "#93000a",
+                        "surface-container": "#122131",
+                        "tertiary-fixed": "#ffdcc5",
+                        "primary": "#6366F1",
+                        "on-secondary-fixed": "#002113",
+                        "on-surface": "#d4e4fa",
+                        "secondary": "#10B981",
+                        "tertiary-container": "#d97721",
+                        "inverse-surface": "#d4e4fa",
+                        "on-tertiary-fixed-variant": "#713700",
+                        "primary-fixed-dim": "#6366F1",
+                        "on-tertiary": "#4f2500",
+                        "inverse-on-surface": "#233143",
+                        "surface-container-highest": "#273647",
+                        "surface-bright": "#2c3a4c",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-secondary-container": "#00311f",
+                        "background": "#0F172A",
+                        "on-background": "#F8FAFC",
+                        "inverse-primary": "#494bd6",
+                        "surface-container-high": "#1E293B",
+                        "on-secondary": "#003824",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-error-container": "#ffdad6",
+                        "surface": "#0F172A",
+                        "secondary-fixed-dim": "#10B981",
+                        "surface-tint": "#6366F1",
+                        "on-primary-fixed": "#07006c",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "secondary-container": "#059669",
+                        "outline-variant": "#334155",
+                        "primary-fixed": "#e1e0ff",
+                        "on-error": "#690005",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#301400",
+                        "secondary-fixed": "#6ffbbe"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "4px",
+                        "lg": "8px",
+                        "xl": "12px",
+                        "full": "999px"
+                    },
+                    "spacing": {
+                        "section-gap": "24px",
+                        "component-gap": "8px",
+                        "gutter": "12px",
+                        "container-margin": "16px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "display": ["Yekan Bakh", "system-ui", "sans-serif"],
+                        "body-md": ["Yekan Bakh", "system-ui", "sans-serif"],
+                        "label-xs": ["JetBrains Mono", "monospace"],
+                        "label-sm": ["JetBrains Mono", "monospace"]
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
-        
-        body {
+        body { 
+            font-family: 'Yekan Bakh', system-ui, -apple-system, sans-serif; 
             background-color: #0F172A;
-            color: #F8FAFC;
-            font-family: 'Yekan Bakh', system-ui, -apple-system, sans-serif;
-            margin: 0;
-            padding: 16px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
         }
-
-        .container {
-            background-color: #1E293B;
-            width: 100%;
-            max-width: 440px;
-            border-radius: 12px;
-            border: 1px solid #334155;
-            padding: 24px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            color: #F8FAFC;
-            margin: 0 0 8px 0;
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 400;
-            color: #94A3B8;
-            margin: 0 0 24px 0;
-        }
-
-        .tech-badge {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
-            font-weight: 500;
-            color: #6366F1;
-            background-color: #0F172A;
-            padding: 4px 8px;
-            border-radius: 4px;
-            display: inline-block;
-            margin-bottom: 24px;
+        .flat-panel {
+            background: #1E293B;
             border: 1px solid #334155;
         }
-
-        .download-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #0F172A;
-            color: #F8FAFC;
-            text-decoration: none;
-            padding: 14px 20px;
-            border-radius: 999px;
-            border: 1px solid #334155;
-            transition: border-color 0.2s, background-color 0.2s;
-            box-sizing: border-box;
-        }
-
-        .btn:hover {
-            border-color: #6366F1;
-            background-color: #1E293B;
-        }
-
-        .btn-primary {
-            background-color: #6366F1;
-            border-color: #6366F1;
-        }
-
-        .btn-primary:hover {
-            background-color: #4F46E5;
-            border-color: #4F46E5;
-        }
-
-        .btn-text {
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        .btn-meta {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
-            color: #94A3B8;
-        }
-
-        .btn-primary .btn-meta {
-            color: #F8FAFC;
-            opacity: 0.8;
+        .hero-gradient {
+            background: radial-gradient(circle at top left, rgba(99, 102, 241, 0.1) 0%, rgba(15, 23, 42, 0) 60%);
         }
     </style>
 </head>
-<body>
+<body class="bg-background text-on-background min-h-screen flex flex-col relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
 
-    <div class="container">
-        <div class="tech-badge">v1.0.0</div>
-        <h1>اپلیکیشن آرا</h1>
-        <p>برنامه مدیریت عادات روزانه با هوش مصنوعی</p>
-        
-        <div class="download-group">
-            <a href="#" class="btn btn-primary">
-                <span class="btn-text">دانلود نسخه iOS</span>
-                <span class="btn-meta">App Store</span>
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300" id="main-nav">
+    <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto w-full">
+        <div class="flex items-center gap-8">
+            <a class="font-display text-2xl font-bold text-primary tracking-tight" href="#">آرا</a>
+            <div class="hidden md:flex gap-6 items-center">
+                <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#features">امکانات کلیدی</a>
+                <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#preview">تمرکز عمیق</a>
+                <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#download">دانلود اپلیکیشن</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-4">
+            <a class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-white font-display text-sm font-semibold rounded-full hover:bg-opacity-90 transition-colors shadow-sm" href="#download">
+                شروع کنید
             </a>
-            
-            <a href="#" class="btn">
-                <span class="btn-text">دانلود نسخه اندروید</span>
-                <span class="btn-meta">Direct APK</span>
-            </a>
-            
-            <a href="#" class="btn">
-                <span class="btn-text">ورود به نسخه وب (PWA)</span>
-                <span class="btn-meta">Run in Browser</span>
-            </a>
+            <button class="md:hidden text-on-surface p-2">
+                <span class="material-symbols-outlined text-[28px]">menu</span>
+            </button>
         </div>
     </div>
+</nav>
 
+<main class="flex-grow pt-[80px]">
+    <section class="relative min-h-[85vh] flex items-center justify-center px-6 py-16 overflow-hidden hero-gradient">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="flex flex-col gap-6 text-right z-20 order-1 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-high border border-outline-variant w-fit self-start">
+                    <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                    <span class="font-label-sm text-xs font-medium text-on-surface-variant" style="font-family: 'JetBrains Mono', monospace;">v1.0.0 Live</span>
+                </div>
+                <h1 class="font-display text-[40px] md:text-[56px] leading-[1.2] font-bold text-on-background tracking-tight">
+                    ساخت عادات ماندگار با <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">هوش مصنوعی آرا</span>
+                </h1>
+                <p class="font-display text-lg md:text-xl text-on-surface-variant max-w-xl font-normal leading-relaxed">
+                    ردیاب هوشمند عادات روزانه با دیزاین مینیمال و بدون حواس‌پرتی. طراحی شده بر اساس اصول تمرکز عمیق برای بهینه‌سازی واقعی سبک زندگی شما.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-4 text-sm">
+                    <a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-display font-bold rounded-full hover:bg-opacity-90 transition-all active:scale-95" href="#download">
+                        <span>دریافت فوری اپلیکیشن</span>
+                        <span class="material-symbols-outlined flip-rtl">arrow_backward</span>
+                    </a>
+                    <a class="inline-flex items-center justify-center gap-2 px-8 py-4 flat-panel text-on-background font-display font-semibold rounded-full hover:bg-surface-container-high transition-all active:scale-95" href="#features">
+                        <span class="material-symbols-outlined">visibility</span>
+                        <span>بررسی امکانات فنی</span>
+                    </a>
+                </div>
+            </div>
+            <div class="relative z-10 lg:h-[500px] flex items-center justify-center mt-8 lg:mt-0 order-2">
+                <div class="absolute w-64 h-64 bg-primary/10 rounded-full blur-3xl -top-10 -right-10"></div>
+                <div class="relative w-full max-w-[340px] aspect-[4/5] rounded-xl overflow-hidden flat-panel transform rotate-[-1deg] hover:rotate-0 transition-transform duration-500">
+                    <img alt="نمای کلی اپلیکیشن آرا" class="w-full h-full object-cover opacity-95" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR_UH7LLM8qOnt9xQanJKLWJizvojxXllLBO1eacHoHaR9vJbOxsx0iT-klvvHHymiH44A1_vPSJmvHKM1zrYxmFm59eGHZp6DStms3dEaWCnmZo8ytwkubDXpwPVtH5vXifw_tpOyIFxHZ13FqXbQZ1KgViVoMwm0FW66cbFGqbXfubXpJNEkRxOL6eWwGknA9vbMWulVQcYIRZalwnmgUyFJ5joQSiKT6h38qK_o6AdqvoBWpnAHKQ8yDB3UCW1IUFDVqneoB9oB"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 relative bg-surface-container-lowest" id="preview">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl font-bold text-on-background mb-4">تمرکز عمیق، بدون شلوغی‌های اضافه</h2>
+                <p class="font-display text-base text-on-surface-variant max-w-2xl mx-auto">رابط کاربری آرا کاملاً فلت و با کنتراست بالا طراحی شده تا ذهن شما فقط روی عملکردتان متمرکز بماند.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 relative rounded-xl overflow-hidden flat-panel p-2 bg-slate-900">
+                    <img alt="استفاده از اپلیکیشن آرا" class="w-full h-auto rounded-xl relative z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwtW_xst6heB7mg7UBRMF822xpcYvusYy02Gz1p9x1lzAO5cmwB8f39aBlHByIBb3c4ccI_lf47jTHE25_LhPoDInAh15EVzo5xU4XFWsKj27Fau4Zre1osYmVvtxA355of0mbxRuq8pTSi2biJ_nojMib9qjN-d_kd7tBWfnBtzGRSSihh-vyXRRbEQbcMLcuzH8cratRunzlIXDoRp00JC5OE1uP7eWB4c7h7cPpdpfUK78v5_SjARoS-Nx2r6por5sl6wA7RQm1"/>
+                </div>
+                <div class="order-1 md:order-2 flex flex-col gap-6">
+                    <div class="flat-panel p-8 rounded-xl border-r-4 border-r-secondary relative overflow-hidden">
+                        <h3 class="font-display text-xl font-bold text-on-background mb-2">داشبورد مینیمال (Bento Grid)</h3>
+                        <p class="font-display text-base text-on-surface-variant leading-relaxed">
+                            نمایش اطلاعات حیاتی و عادات روزانه در قالب بلوک‌های متمرکز لایه‌بندی شده. تمام سایه‌ها و افکت‌های بلر حذف شده‌اند تا پردازش داده‌ها برای مغز در سریع‌ترین زمان ممکن انجام شود.
+                        </p>
+                    </div>
+                    <div class="flat-panel p-8 rounded-xl border-r-4 border-r-primary relative overflow-hidden">
+                        <h3 class="font-display text-xl font-bold text-on-background mb-2">نمودارهای مونوپیس شفاف</h3>
+                        <p class="font-display text-base text-on-surface-variant leading-relaxed">
+                            نمایش زمان‌ها، درصد پیشرفت و تایم‌ستمپ‌ها با فونت اختصاصی تکنیکال جهت خوانایی حداکثری آمارهای فردی.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 relative" id="features">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl font-bold text-on-background mb-4">مهندسی شده برای بهره‌وری</h2>
+                <p class="font-display text-base text-on-surface-variant max-w-2xl mx-auto">سیستم ردیابی آرا از پایه‌ای‌ترین ساختارها برای ثبات عادات شما استفاده می‌کند.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-primary text-[28px]">psychology</span>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-on-background mb-3">تحلیل الگو با هوش مصنوعی</h3>
+                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">هوش مصنوعی آرا با تحلیل زمان‌های فعالیت، رفتارهای شما را بررسی کرده و بهترین زمانبندی برای عادات جدید را پیشنهاد می‌دهد.</p>
+                </div>
+                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group">
+                    <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-secondary text-[28px]">layers</span>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-on-background mb-3">دیزاین سیستم لایه‌ای (Tonal)</h3>
+                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">کنتراست کاملاً بهینه‌سازی شده برای تم‌های دارک و لایت عمیق، همراه با مرزبندی‌های دقیق بوردرها بجای افکت‌های شلوغ بصری.</p>
+                </div>
+                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-amber-500 text-[28px]">bolt</span>
+                    </div>
+                    <h3 class="font-display text-lg font-bold text-on-background mb-3">پیگیری زنجیره عادات (Streaks)</h3>
+                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">محاسبه دقیق زنجیره موفقیت شما به کمک فلوهای بهینه شده، جهت افزایش مداوم انگیزه در مسیر اهداف بلندمدت.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 relative bg-surface-container-lowest overflow-hidden" id="download">
+        <div class="max-w-4xl mx-auto relative z-10 flat-panel rounded-xl p-12 text-center shadow-2xl">
+            <h2 class="font-display text-3xl font-bold text-on-background mb-4">آرا را روی تمام دستگاه‌ها داشته باشید</h2>
+            <p class="font-display text-base text-on-surface-variant max-w-xl mx-auto mb-10">
+                نسخه هماهنگ با پلتفرم خود را دریافت کنید و از همین امروز مدیریت هوشمند عادات را شروع کنید.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-slate-900 hover:bg-surface-bright text-on-background rounded-full border border-outline-variant transition-all active:scale-95 group">
+                    <span class="material-symbols-outlined text-secondary text-2xl">android</span>
+                    <div class="text-right flex flex-col">
+                        <span class="text-[10px] text-on-surface-variant uppercase tracking-wider font-medium" style="font-family: 'JetBrains Mono', monospace;">Download APK</span>
+                        <span class="font-display text-sm font-bold">نسخه اندروید</span>
+                    </div>
+                </button>
+                <button class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-slate-900 hover:bg-surface-bright text-on-background rounded-full border border-outline-variant transition-all active:scale-95 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">phone_iphone</span>
+                    <div class="text-right flex flex-col">
+                        <span class="text-[10px] text-on-surface-variant uppercase tracking-wider font-medium" style="font-family: 'JetBrains Mono', monospace;">App Store</span>
+                        <span class="font-display text-sm font-bold">نسخه iOS</span>
+                    </div>
+                </button>
+                <button class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-primary text-white hover:bg-opacity-90 rounded-full transition-all active:scale-95 group">
+                    <span class="material-symbols-outlined text-2xl">language</span>
+                    <div class="text-right flex flex-col">
+                        <span class="text-[10px] text-white/80 uppercase tracking-wider font-medium" style="font-family: 'JetBrains Mono', monospace;">Run Web App</span>
+                        <span class="font-display text-sm font-bold">نسخه وب (PWA)</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-surface-container-lowest w-full border-t border-outline-variant mt-auto">
+    <div class="flex flex-col items-center gap-4 px-6 py-8 w-full max-w-7xl mx-auto">
+        <div class="font-display text-xl font-bold text-on-background">آرا</div>
+        <div class="flex flex-wrap justify-center gap-6 text-xs text-on-surface-variant">
+            <a class="hover:text-secondary transition-colors" href="#">حریم خصوصی</a>
+            <a class="hover:text-secondary transition-colors" href="#">قوانین استفاده</a>
+            <a class="hover:text-secondary transition-colors" href="#">پشتیبانی</a>
+        </div>
+        <div class="text-[11px] text-secondary text-center opacity-80 mt-2" style="font-family: 'JetBrains Mono', monospace;">
+            © 2026 Ara AI Habit Tracker. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Adjust navbar shadow on scroll
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('main-nav');
+        if (window.scrollY > 20) {
+            nav.classList.add('shadow-md');
+        } else {
+            nav.classList.remove('shadow-md');
+        }
+    });
+</script>
 </body>
 </html>

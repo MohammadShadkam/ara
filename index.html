@@ -152,23 +152,9 @@
             <div class="relative z-10 lg:h-[500px] flex items-center justify-center mt-8 lg:mt-0 order-2">
                 <div class="absolute w-64 h-64 bg-primary/10 rounded-full blur-3xl -top-10 -right-10"></div>
                 
-                <!-- ویدیوی جایگزین عکس -->
-                <div class="relative w-full max-w-[340px] aspect-[4/5] rounded-xl overflow-hidden flat-panel transform rotate-[-1deg] hover:rotate-0 transition-transform duration-500">
-                    
-                    <!-- 
-                       محل آپلود ویدیو یا گیف:
-                       اگر فایلت ویدیو (MP4/WebM) هست، آدرسش رو توی قسمت src تگ زیر گذاشتم.
-                       ویژگی‌های autoplay, loop, muted, playsinline رو پاک نکن تا ویدیو مثل گیف خودکار و بی‌صدا پخش بشه.
-                    -->
-                    <video src="./assest/demo.mp4" autoplay loop muted playsinline class="w-full h-full object-cover opacity-95"></video>
-
-                    
-                    <!-- 
-                       اگر فایلت گیف (GIF) هست، تگ video بالا رو کلاً پاک کن،
-                       و تگ img زیر رو از کامنت دربیار و آدرس گیف رو بهش بده:
-                    -->
-                    <!-- <img src="" alt="دمو اپلیکیشن آرا" class="w-full h-full object-cover opacity-95" /> -->
-                    
+                <!-- ویدیوی اصلاح شده با عرض بزرگتر و بدون برش -->
+                <div class="relative w-full max-w-[420px] rounded-xl overflow-hidden flat-panel transform rotate-[-1deg] hover:rotate-0 transition-transform duration-500">
+                    <video src="./assest/demo.mp4" autoplay loop muted playsinline class="w-full h-auto opacity-95"></video>
                 </div>
                 
             </div>
@@ -264,27 +250,30 @@
                 نسخه هماهنگ با پلتفرم خود را دریافت کنید و از همین امروز مدیریت هوشمند کارها را شروع کنید.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-slate-900 hover:bg-surface-bright text-on-background rounded-full border border-outline-variant transition-all active:scale-95 group">
+                <!-- دکمه کافه بازار -->
+                <a href="https://cafebazaar.ir/app/ir.araproductivity.app" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-slate-900 hover:bg-surface-bright text-on-background rounded-full border border-outline-variant transition-all active:scale-95 group">
                     <span class="material-symbols-outlined text-secondary text-2xl">android</span>
                     <div class="text-right flex flex-col">
                         <span class="text-[10px] text-on-surface-variant uppercase tracking-wider font-medium" style="font-family: 'JetBrains Mono', monospace;">Download APK</span>
                         <span class="font-display text-sm font-bold">نسخه اندروید</span>
                     </div>
-                </button>
-                <button class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-slate-900 hover:bg-surface-bright text-on-background rounded-full border border-outline-variant transition-all active:scale-95 group">
+                </a>
+                <!-- دکمه سیب‌اپ -->
+                <a href="https://sibapp.com/applications/Ara%7CSmartAssistant" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-slate-900 hover:bg-surface-bright text-on-background rounded-full border border-outline-variant transition-all active:scale-95 group">
                     <span class="material-symbols-outlined text-primary text-2xl">phone_iphone</span>
                     <div class="text-right flex flex-col">
                         <span class="text-[10px] text-on-surface-variant uppercase tracking-wider font-medium" style="font-family: 'JetBrains Mono', monospace;">App Store</span>
                         <span class="font-display text-sm font-bold">نسخه iOS</span>
                     </div>
-                </button>
-                <button class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-primary text-white hover:bg-opacity-90 rounded-full transition-all active:scale-95 group">
+                </a>
+                <!-- دکمه وب اپ (بدون تغییر لینک، فقط تبدیل به تگ a شده) -->
+                <a href="#" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-primary text-white hover:bg-opacity-90 rounded-full transition-all active:scale-95 group">
                     <span class="material-symbols-outlined text-2xl">language</span>
                     <div class="text-right flex flex-col">
                         <span class="text-[10px] text-white/80 uppercase tracking-wider font-medium" style="font-family: 'JetBrains Mono', monospace;">Run Web App</span>
                         <span class="font-display text-sm font-bold">نسخه وب (PWA)</span>
                     </div>
-                </button>
+                </a>
             </div>
         </div>
     </section>

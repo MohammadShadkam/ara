@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" dir="rtl" lang="fa">
+<html class="dark scroll-smooth" dir="rtl" lang="fa">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -104,7 +104,10 @@
 <nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300" id="main-nav">
     <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto w-full">
         <div class="flex items-center gap-8">
-            <a class="font-display text-2xl font-bold text-primary tracking-tight" href="#">آرا</a>
+            <a class="flex items-center gap-3 font-display text-2xl font-bold text-primary tracking-tight" href="#">
+                <img src="./assest/Ara3.jpg" alt="لوگو آرا" class="w-9 h-9 rounded-xl object-cover shadow-sm border border-outline-variant/30" />
+                <span>آرا</span>
+            </a>
             <div class="hidden md:flex gap-6 items-center">
                 <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#about">درباره آرا</a>
                 <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#features">ویژگی‌ها</a>
@@ -124,7 +127,7 @@
 </nav>
 
 <main class="flex-grow pt-[80px]">
-    <!-- Hero Section (کوچک‌تر و وسط‌چین) -->
+    <!-- Hero Section -->
     <section class="relative flex items-center justify-center px-6 py-24 md:py-32 overflow-hidden hero-gradient text-center">
         <div class="max-w-4xl mx-auto flex flex-col items-center gap-6 relative z-10">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-high border border-outline-variant w-fit">
@@ -150,7 +153,7 @@
         </div>
     </section>
 
-    <!-- About Section (بزرگ‌تر همراه با ویدئو) -->
+    <!-- About Section -->
     <section class="py-32 px-6 relative bg-surface-container-lowest min-h-[85vh] flex flex-col items-center justify-center" id="about">
         <div class="max-w-5xl mx-auto flex flex-col items-center text-center gap-16">
             
@@ -163,7 +166,6 @@
                 </p>
             </div>
             
-            <!-- ویدئو با کادر بزرگ و پخش با کلیک -->
             <div class="relative w-full max-w-[420px] rounded-xl overflow-hidden flat-panel shadow-2xl shadow-primary/5 transition-transform duration-500 hover:scale-[1.02]">
                 <video 
                     src="./assest/video.webm" 
@@ -188,7 +190,6 @@
             </div>
             
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Card 1 -->
                 <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group flex flex-col">
                     <div class="flex items-center gap-2 mb-2 text-primary">
                         <span class="text-2xl">🧠</span>
@@ -203,7 +204,6 @@
                     </div>
                 </div>
                 
-                <!-- Card 2 -->
                 <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group flex flex-col">
                     <div class="flex items-center gap-2 mb-2 text-secondary">
                         <span class="text-2xl">🔥</span>
@@ -215,7 +215,6 @@
                     </p>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group flex flex-col">
                     <div class="flex items-center gap-2 mb-2 text-amber-500">
                         <span class="text-2xl">📝</span>
@@ -227,7 +226,6 @@
                     </p>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group flex flex-col">
                     <div class="flex items-center gap-2 mb-2 text-blue-500">
                         <span class="text-2xl">⚡️</span>
@@ -266,7 +264,8 @@
                     </div>
                 </a>
                 
-                <a href="https://amir-hormozi.github.io/AI-Habit-Tracker/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-primary text-white hover:bg-opacity-90 rounded-full transition-all active:scale-95 group">
+                <!-- این دکمه حالا به جای باز کردن لینک، اسکرول میشه روی راهنمای PWA -->
+                <a href="#pwa-guide" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-primary text-white hover:bg-opacity-90 rounded-full transition-all active:scale-95 group">
                     <span class="material-symbols-outlined text-2xl">language</span>
                     <div class="text-right flex flex-col">
                         <span class="text-[10px] text-white/80 uppercase tracking-wider font-medium" style="font-family: 'JetBrains Mono', monospace;">Run Web App</span>
@@ -313,7 +312,7 @@
                                 1
                             </div>
                             <p class="text-on-surface-variant leading-relaxed">
-                                نسخه وب آرا را در مرورگر Chrome باز کنید.
+                                روی دکمه «نصب PWA» در پایین همین صفحه کلیک کنید.
                             </p>
                         </div>
 
@@ -322,7 +321,7 @@
                                 2
                             </div>
                             <p class="text-on-surface-variant leading-relaxed">
-                                روی منوی سه نقطه (⋮) بزنید.
+                                پس از ورود، روی منوی سه نقطه (⋮) مرورگر بزنید.
                             </p>
                         </div>
 
@@ -370,7 +369,7 @@
                                 1
                             </div>
                             <p class="text-on-surface-variant leading-relaxed">
-                                آرا را با مرورگر Safari باز کنید.
+                                روی دکمه «نصب PWA» کلیک کنید تا آرا با مرورگر Safari باز شود.
                             </p>
                         </div>
 
@@ -379,7 +378,7 @@
                                 2
                             </div>
                             <p class="text-on-surface-variant leading-relaxed">
-                                روی دکمه Share بزنید.
+                                روی دکمه Share در پایین صفحه بزنید.
                             </p>
                         </div>
 
@@ -406,7 +405,7 @@
 
             </div>
 
-            <div class="mt-10 flat-panel rounded-xl p-6 border-r-4 border-r-secondary">
+            <div class="mt-10 flat-panel rounded-xl p-6 border-r-4 border-r-secondary mb-12">
                 <div class="flex items-start gap-3">
                     <span class="material-symbols-outlined text-secondary text-3xl">
                         lightbulb
@@ -425,6 +424,15 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- دکمه بزرگ نصب وب اپ -->
+            <div class="flex justify-center mt-12">
+                <a href="https://amir-hormozi.github.io/AI-Habit-Tracker/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-12 py-5 bg-primary text-white font-display font-bold text-lg rounded-full hover:bg-opacity-90 transition-all active:scale-95 shadow-lg shadow-primary/30">
+                    <span>نصب PWA</span>
+                    <span class="material-symbols-outlined">install_mobile</span>
+                </a>
+            </div>
+
         </div>
     </section>
 </main>
@@ -444,7 +452,6 @@
 </footer>
 
 <script>
-    // Adjust navbar shadow on scroll
     window.addEventListener('scroll', () => {
         const nav = document.getElementById('main-nav');
         if (window.scrollY > 20) {

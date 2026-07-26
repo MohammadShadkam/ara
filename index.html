@@ -124,51 +124,56 @@
 </nav>
 
 <main class="flex-grow pt-[80px]">
-    <!-- Hero Section -->
-    <section class="relative min-h-[85vh] flex items-center justify-center px-6 py-16 overflow-hidden hero-gradient">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
-            <div class="flex flex-col gap-6 text-right z-20 order-1 lg:order-1">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-high border border-outline-variant w-fit self-start">
-                    <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                    <span class="font-label-sm text-xs font-medium text-on-surface-variant" style="font-family: 'JetBrains Mono', monospace;">v1.0.0 Live</span>
-                </div>
-                <h1 class="font-display text-[40px] md:text-[52px] leading-[1.2] font-bold text-on-background tracking-tight">
-                    ذهنت رو خالی کن، <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">برنامه‌ریزیش با آرا.</span>
-                </h1>
-                <p class="font-display text-lg md:text-xl text-on-surface-variant max-w-xl font-normal leading-relaxed">
-                    یه تودولیست و ردیاب عادت هوشمند، بدون فرم‌های خسته‌کننده. کارهات رو همون‌طور که تو ذهنته بنویس؛ آرا تو یه ثانیه برنامه‌ت رو می‌چینه و سر وقت یادت می‌ندازه.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 mt-4 text-sm">
-                    <a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-display font-bold rounded-full hover:bg-opacity-90 transition-all active:scale-95" href="#download">
-                        <span>دانلود رایگان آرا</span>
-                        <span class="material-symbols-outlined flip-rtl">arrow_backward</span>
-                    </a>
-                    <a class="inline-flex items-center justify-center gap-2 px-8 py-4 flat-panel text-on-background font-display font-semibold rounded-full hover:bg-surface-container-high transition-all active:scale-95" href="#about">
-                        <span class="material-symbols-outlined">help</span>
-                        <span>آرا دقیقاً چی‌کار می‌کنه؟</span>
-                    </a>
-                </div>
+    <!-- Hero Section (کوچک‌تر و وسط‌چین) -->
+    <section class="relative flex items-center justify-center px-6 py-24 md:py-32 overflow-hidden hero-gradient text-center">
+        <div class="max-w-4xl mx-auto flex flex-col items-center gap-6 relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-high border border-outline-variant w-fit">
+                <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+                <span class="font-label-sm text-xs font-medium text-on-surface-variant" style="font-family: 'JetBrains Mono', monospace;">v1.0.0 Live</span>
             </div>
-            
-            <div class="relative z-10 lg:h-[500px] flex items-center justify-center mt-8 lg:mt-0 order-2">
-                <div class="absolute w-64 h-64 bg-primary/10 rounded-full blur-3xl -top-10 -right-10"></div>
-                
-                <div class="relative w-full max-w-[420px] rounded-xl overflow-hidden flat-panel transform rotate-[-1deg] hover:rotate-0 transition-transform duration-500">
-                    <video src="./assest/video.webm" autoplay loop muted playsinline class="w-full h-auto opacity-95"></video>
-                </div>
+            <h1 class="font-display text-[40px] md:text-[56px] leading-[1.2] font-bold text-on-background tracking-tight">
+                ذهنت رو خالی کن، <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">برنامه‌ریزیش با آرا.</span>
+            </h1>
+            <p class="font-display text-lg md:text-xl text-on-surface-variant max-w-2xl font-normal leading-relaxed">
+                یه تودولیست و ردیاب عادت هوشمند، بدون فرم‌های خسته‌کننده. کارهات رو همون‌طور که تو ذهنته بنویس؛ آرا تو یه ثانیه برنامه‌ت رو می‌چینه و سر وقت یادت می‌ندازه.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-6 text-sm justify-center w-full">
+                <a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-display font-bold rounded-full hover:bg-opacity-90 transition-all active:scale-95" href="#download">
+                    <span>دانلود رایگان آرا</span>
+                    <span class="material-symbols-outlined flip-rtl">arrow_backward</span>
+                </a>
+                <a class="inline-flex items-center justify-center gap-2 px-8 py-4 flat-panel text-on-background font-display font-semibold rounded-full hover:bg-surface-container-high transition-all active:scale-95" href="#about">
+                    <span class="material-symbols-outlined">help</span>
+                    <span>آرا دقیقاً چی‌کار می‌کنه؟</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="py-24 px-6 relative bg-surface-container-lowest" id="about">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="font-display text-3xl md:text-4xl font-bold text-on-background mb-6 leading-tight">
-                تو فقط بنویس، <span class="text-primary">آرا خودش (کارهات رو) مرتبش می‌کنه!</span>
-            </h2>
-            <p class="font-display text-lg md:text-xl text-on-surface-variant leading-relaxed">
-                فرقی نمی‌کنه کارهات چقدر درهم‌برهم باشن؛ آرا لحنِت رو می‌فهمه، کارها رو از عادت‌ها تفکیک می‌کنه و همه‌چیز رو تمیز می‌چینه سر جای خودش.
-            </p>
+    <!-- About Section (بزرگ‌تر همراه با ویدئو) -->
+    <section class="py-32 px-6 relative bg-surface-container-lowest min-h-[85vh] flex flex-col items-center justify-center" id="about">
+        <div class="max-w-5xl mx-auto flex flex-col items-center text-center gap-16">
+            
+            <div class="max-w-4xl mx-auto">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-on-background mb-6 leading-tight">
+                    تو فقط بنویس، <span class="text-primary">آرا خودش (کارهات رو) مرتبش می‌کنه!</span>
+                </h2>
+                <p class="font-display text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-3xl mx-auto">
+                    فرقی نمی‌کنه کارهات چقدر درهم‌برهم باشن؛ آرا لحنِت رو می‌فهمه، کارها رو از عادت‌ها تفکیک می‌کنه و همه‌چیز رو تمیز می‌چینه سر جای خودش.
+                </p>
+            </div>
+            
+            <!-- ویدئو با کادر بزرگ و پخش با کلیک -->
+            <div class="relative w-full max-w-[420px] rounded-xl overflow-hidden flat-panel shadow-2xl shadow-primary/5 transition-transform duration-500 hover:scale-[1.02]">
+                <video 
+                    src="./assest/video.webm" 
+                    playsinline 
+                    controls
+                    class="w-full h-auto cursor-pointer"
+                    onclick="this.paused ? this.play() : this.pause()"
+                ></video>
+            </div>
+            
         </div>
     </section>
 

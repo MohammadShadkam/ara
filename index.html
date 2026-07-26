@@ -107,8 +107,9 @@
             <a class="font-display text-2xl font-bold text-primary tracking-tight" href="#">آرا</a>
             <div class="hidden md:flex gap-6 items-center">
                 <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#about">درباره آرا</a>
-                <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#features">چرا آرا؟</a>
+                <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#features">ویژگی‌ها</a>
                 <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#download">دانلود اپلیکیشن</a>
+                <a class="font-display text-base text-on-surface-variant hover:text-primary transition-colors" href="#pwa-guide">راهنمای PWA</a>
             </div>
         </div>
         <div class="flex items-center gap-4">
@@ -132,19 +133,19 @@
                     <span class="font-label-sm text-xs font-medium text-on-surface-variant" style="font-family: 'JetBrains Mono', monospace;">v1.0.0 Live</span>
                 </div>
                 <h1 class="font-display text-[40px] md:text-[52px] leading-[1.2] font-bold text-on-background tracking-tight">
-                    ذهن شما خلق می‌کند، <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">ما سازماندهی میکنیم!</span>
+                    ذهنت رو خالی کن، <span class="text-transparent bg-clip-text bg-gradient-to-l from-primary to-secondary">برنامه‌ریزیش با آرا.</span>
                 </h1>
                 <p class="font-display text-lg md:text-xl text-on-surface-variant max-w-xl font-normal leading-relaxed">
-                    ثبت بی‌درنگ کارهای روزانه و پیگیری عادت‌ها بدون پر کردن فرم‌های خسته‌کننده.
+                    یه تودولیست و ردیاب عادت هوشمند، بدون فرم‌های خسته‌کننده. کارهات رو همون‌طور که تو ذهنته بنویس؛ آرا تو یه ثانیه برنامه‌ت رو می‌چینه و سر وقت یادت می‌ندازه.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mt-4 text-sm">
                     <a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-display font-bold rounded-full hover:bg-opacity-90 transition-all active:scale-95" href="#download">
-                        <span>دریافت فوری اپلیکیشن</span>
+                        <span>دانلود رایگان آرا</span>
                         <span class="material-symbols-outlined flip-rtl">arrow_backward</span>
                     </a>
-                    <a class="inline-flex items-center justify-center gap-2 px-8 py-4 flat-panel text-on-background font-display font-semibold rounded-full hover:bg-surface-container-high transition-all active:scale-95" href="#features">
-                        <span class="material-symbols-outlined">visibility</span>
-                        <span>بررسی امکانات فنی</span>
+                    <a class="inline-flex items-center justify-center gap-2 px-8 py-4 flat-panel text-on-background font-display font-semibold rounded-full hover:bg-surface-container-high transition-all active:scale-95" href="#about">
+                        <span class="material-symbols-outlined">help</span>
+                        <span>آرا دقیقاً چی‌کار می‌کنه؟</span>
                     </a>
                 </div>
             </div>
@@ -152,48 +153,22 @@
             <div class="relative z-10 lg:h-[500px] flex items-center justify-center mt-8 lg:mt-0 order-2">
                 <div class="absolute w-64 h-64 bg-primary/10 rounded-full blur-3xl -top-10 -right-10"></div>
                 
-                <!-- ویدیوی اصلاح شده با عرض بزرگتر و بدون برش -->
                 <div class="relative w-full max-w-[420px] rounded-xl overflow-hidden flat-panel transform rotate-[-1deg] hover:rotate-0 transition-transform duration-500">
                     <video src="./assest/video.webm" autoplay loop muted playsinline class="w-full h-auto opacity-95"></video>
                 </div>
-                
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="py-20 px-6 relative bg-surface-container-lowest" id="about">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="font-display text-3xl font-bold text-on-background mb-4">پایانِ فرم‌های خسته‌کننده</h2>
-                <p class="font-display text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-                    ما معتقدیم شما کارهای بسیار مهم‌تری دارید تا اینکه وقت خود را صرف پر کردنِ دستیِ فرم‌ها، انتخاب دسته‌بندی‌ها و تنظیم دقیق تاریخ و تقویم کنید.
-                </p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="order-1 md:order-1 flex flex-col gap-6">
-                    <div class="flat-panel p-8 rounded-xl border-r-4 border-r-primary relative overflow-hidden">
-                        <h3 class="font-display text-xl font-bold text-on-background mb-3">دستیار هوشمند شما</h3>
-                        <p class="font-display text-base text-on-surface-variant leading-relaxed">
-                            در دنیای پرشتاب امروز، ذهن ما پر از ایده‌ها، کارها و برنامه‌هایی است که با سرعت نور فراموش می‌شوند. آرا دقیقاً برای همین لحظات مهندسی شده است؛ دستیار هوشمندِ شما برای تبدیل افکارِ آشفته به یک برنامه‌ی منظم، تنها در کسری از ثانیه.
-                        </p>
-                    </div>
-                </div>
-                <div class="order-2 md:order-2 flex flex-col gap-6">
-                    <div class="flat-panel p-8 rounded-xl border-r-4 border-r-secondary relative overflow-hidden">
-                        <h3 class="font-display text-xl font-bold text-on-background mb-3">جادوی پردازشِ آرا چگونه کار میکند؟</h3>
-                        <p class="font-display text-base text-on-surface-variant leading-relaxed mb-4">
-                            آرا به یک موتور پردازشیِ فوق هوشمند مجهز شده که زبان طبیعی و محاوره‌ای فارسی را با دقتی بی‌نظیر درک میکند. نیازی به هیچ تنظیماتی نیست؛ فقط کافیست بنویسید:
-                        </p>
-                        <div class="p-4 bg-surface-container-lowest rounded-lg border border-outline-variant font-display text-sm text-primary">
-                            « فردا ساعت ۵ عصر وقت دندونپزشکی دارم و باید نیم ساعت قبلش مسواک کنم و راه بیفتم. »
-                        </div>
-                        <p class="font-display text-sm text-on-surface-variant mt-4 leading-relaxed">
-                            تمام! سیستم بی‌درنگ این متن را تحلیل کرده و با درکِ کاملِ تقویم شمسی، آن را به وظایف دقیق همراه با سیستم یادآوری هوشمند تبدیل میکند.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <section class="py-24 px-6 relative bg-surface-container-lowest" id="about">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-on-background mb-6 leading-tight">
+                تو فقط بنویس، <span class="text-primary">آرا خودش (کارهات رو) مرتبش می‌کنه!</span>
+            </h2>
+            <p class="font-display text-lg md:text-xl text-on-surface-variant leading-relaxed">
+                فرقی نمی‌کنه کارهات چقدر درهم‌برهم باشن؛ آرا لحنِت رو می‌فهمه، کارها رو از عادت‌ها تفکیک می‌کنه و همه‌چیز رو تمیز می‌چینه سر جای خودش.
+            </p>
         </div>
     </section>
 
@@ -201,203 +176,67 @@
     <section class="py-20 px-6 relative" id="features">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="font-display text-3xl font-bold text-on-background mb-4">چرا آرا بی‌رقیب است؟</h2>
+                <h2 class="font-display text-3xl font-bold text-on-background mb-4">مهندسی شده برای زندگی واقعی</h2>
                 <p class="font-display text-base text-on-surface-variant max-w-2xl mx-auto">
-                    ماموریت ما: شما فقط روی «انجام دادن» کارها تمرکز کنید؛ «چگونه ثبت کردن» آنها تخصصِ ماست.
+                    آرا همه‌چیز رو برای یه روزِ منظم یک‌جا جمع کرده.
                 </p>
             </div>
+            
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group">
-                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-primary text-[28px]">chat</span>
+                <!-- Card 1 -->
+                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group flex flex-col">
+                    <div class="flex items-center gap-2 mb-2 text-primary">
+                        <span class="text-2xl">🧠</span>
+                        <span class="font-display text-sm font-bold opacity-80">هوشِ گوش‌به‌زنگ</span>
                     </div>
-                    <h3 class="font-display text-lg font-bold text-on-background mb-3">پردازش بی‌نقص زبان فارسی</h3>
-                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">درکِ کاملِ اصطلاحات زمانیِ روزمره (مثل فردا، دوشنبه هفته دیگه، شنبه‌ها و...)</p>
+                    <h3 class="font-display text-xl font-bold text-on-background mb-3">لحنت رو می‌فهمه</h3>
+                    <p class="font-display text-sm text-on-surface-variant leading-relaxed mb-6 flex-grow">
+                        کارهات رو راحت و محاوره‌ای بنویس؛ آرا خودش زمان و یادآوریش رو ست می‌کنه.
+                    </p>
+                    <div class="p-4 bg-surface-container-lowest rounded-lg border border-outline-variant font-display text-xs text-on-surface-variant leading-relaxed">
+                        «فردا ساعت ۵ عصر جلسه دارم، ۴۵ دقیقه قبلش خبرم کن.»
+                    </div>
                 </div>
                 
-                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group">
-                    <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-secondary text-[28px]">calendar_month</span>
+                <!-- Card 2 -->
+                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group flex flex-col">
+                    <div class="flex items-center gap-2 mb-2 text-secondary">
+                        <span class="text-2xl">🔥</span>
+                        <span class="font-display text-sm font-bold opacity-80">پیگیری کامل عادت ها</span>
                     </div>
-                    <h3 class="font-display text-lg font-bold text-on-background mb-3">هوش یکپارچه با تقویم شمسی</h3>
-                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">خداحافظی با تبدیلِ تاریخ‌های میلادی به شمسی؛ آرا ذاتاً ایرانی و منطبق بر تقویم جلالی است.</p>
+                    <h3 class="font-display text-xl font-bold text-on-background mb-3">ردیاب عادت کامل</h3>
+                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">
+                        با روشن نگه‌داشتن شعله‌ی روزهای متوالی (Streak)، انگیزه‌ت رو برای روتین‌های جدید بالا نگه دار.
+                    </p>
                 </div>
 
-                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group">
-                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-amber-500 text-[28px]">monitoring</span>
+                <!-- Card 3 -->
+                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group flex flex-col">
+                    <div class="flex items-center gap-2 mb-2 text-amber-500">
+                        <span class="text-2xl">📝</span>
+                        <span class="font-display text-sm font-bold opacity-80">حق انتخاب با توئه</span>
                     </div>
-                    <h3 class="font-display text-lg font-bold text-on-background mb-3">موتور قدرتمند پیگیری عادت</h3>
-                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">علاوه بر کارهای روزانه، روتین‌های جدید بسازید و با سیستم رهگیری پیشرفته، سبک زندگی خود را متحول کنید.</p>
+                    <h3 class="font-display text-xl font-bold text-on-background mb-3">ثبت دستی و کلاسیک</h3>
+                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">
+                        هر وقت بخوای می‌تونی خیلی راحت و به روش سنتی، خودت کارها رو وارد کنی.
+                    </p>
                 </div>
 
-                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-blue-500 text-[28px]">bolt</span>
+                <!-- Card 4 -->
+                <div class="flat-panel p-8 rounded-xl hover:bg-surface-container transition-colors group flex flex-col">
+                    <div class="flex items-center gap-2 mb-2 text-blue-500">
+                        <span class="text-2xl">⚡️</span>
+                        <span class="font-display text-sm font-bold opacity-80">همیشه آماده</span>
                     </div>
-                    <h3 class="font-display text-lg font-bold text-on-background mb-3">سرعتِ نور و دسترسیِ پایدار</h3>
-                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">تجربه‌ای روان، سریع و بدون گیر کردن در منوهای پیچیده برای ثبت سریع افکار.</p>
+                    <h3 class="font-display text-xl font-bold text-on-background mb-3">سرعتِ بالا، بدون اینترنت</h3>
+                    <p class="font-display text-sm text-on-surface-variant leading-relaxed">
+                        آرا آفلاین هم کار می‌کنه تا بدون معطلی و قطعی شبکه، همیشه به برنامه‌هات دسترسی داشته باشی.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PWA Guide Section -->
-<section class="py-20 px-6 bg-surface-container-low relative" id="pwa-guide">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="font-display text-3xl font-bold text-on-background mb-4">
-                نصب نسخه وب (PWA)
-            </h2>
-            <p class="font-display text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
-                بدون نیاز به نصب از فروشگاه‌ها، آرا را تنها با چند لمس روی صفحه اصلی گوشی یا کامپیوتر خود اضافه کنید.
-            </p>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-8">
-
-            <!-- Android -->
-            <div class="flat-panel rounded-xl p-8">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-secondary text-3xl">android</span>
-                    </div>
-                    <div>
-                        <h3 class="font-display text-xl font-bold text-on-background">
-                            اندروید (Chrome)
-                        </h3>
-                        <p class="text-sm text-on-surface-variant">
-                            کمتر از ۳۰ ثانیه
-                        </p>
-                    </div>
-                </div>
-
-                <div class="space-y-4">
-
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-                            1
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            نسخه وب آرا را در مرورگر Chrome باز کنید.
-                        </p>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-                            2
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            روی منوی سه نقطه (⋮) بزنید.
-                        </p>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-                            3
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            گزینه <strong>Install App</strong> یا
-                            <strong>Add to Home Screen</strong>
-                            را انتخاب کنید.
-                        </p>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-                            4
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            روی Install بزنید و از آرا مانند یک اپلیکیشن استفاده کنید.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- iPhone -->
-            <div class="flat-panel rounded-xl p-8">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                        <span class="material-symbols-outlined text-primary text-3xl">phone_iphone</span>
-                    </div>
-                    <div>
-                        <h3 class="font-display text-xl font-bold text-on-background">
-                            آیفون (Safari)
-                        </h3>
-                        <p class="text-sm text-on-surface-variant">
-                            فقط چند مرحله ساده
-                        </p>
-                    </div>
-                </div>
-
-                <div class="space-y-4">
-
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-                            1
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            آرا را با مرورگر Safari باز کنید.
-                        </p>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-                            2
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            روی دکمه Share بزنید.
-                        </p>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-                            3
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            گزینه <strong>Add to Home Screen</strong>
-                            را انتخاب کنید.
-                        </p>
-                    </div>
-
-                    <div class="flex gap-4">
-                        <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
-                            4
-                        </div>
-                        <p class="text-on-surface-variant leading-relaxed">
-                            روی Add بزنید تا آرا مانند یک اپلیکیشن روی صفحه اصلی نصب شود.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="mt-10 flat-panel rounded-xl p-6 border-r-4 border-r-secondary">
-            <div class="flex items-start gap-3">
-                <span class="material-symbols-outlined text-secondary text-3xl">
-                    lightbulb
-                </span>
-                <div>
-                    <h3 class="font-display text-lg font-bold text-on-background mb-2">
-                        مزایای نسخه PWA
-                    </h3>
-
-                    <ul class="space-y-2 text-on-surface-variant leading-relaxed">
-                        <li>✔ اجرا مانند یک اپلیکیشن واقعی</li>
-                        <li>✔ بدون نوار مرورگر</li>
-                        <li>✔ اجرای سریع‌تر</li>
-                        <li>✔ آیکون روی صفحه اصلی</li>
-                        <li>✔ دریافت بروزرسانی خودکار</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    
     <!-- Download Section -->
     <section class="py-20 px-6 relative bg-surface-container-lowest overflow-hidden" id="download">
         <div class="max-w-4xl mx-auto relative z-10 flat-panel rounded-xl p-12 text-center shadow-2xl">
@@ -406,7 +245,6 @@
                 نسخه هماهنگ با پلتفرم خود را دریافت کنید و از همین امروز مدیریت هوشمند کارها را شروع کنید.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <!-- دکمه کافه بازار -->
                 <a href="https://cafebazaar.ir/app/ir.araproductivity.app" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-slate-900 hover:bg-surface-bright text-on-background rounded-full border border-outline-variant transition-all active:scale-95 group">
                     <span class="material-symbols-outlined text-secondary text-2xl">android</span>
                     <div class="text-right flex flex-col">
@@ -414,7 +252,7 @@
                         <span class="font-display text-sm font-bold">نسخه اندروید</span>
                     </div>
                 </a>
-                <!-- دکمه سیب‌اپ -->
+                
                 <a href="https://sibapp.com/applications/Ara%7CSmartAssistant" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-slate-900 hover:bg-surface-bright text-on-background rounded-full border border-outline-variant transition-all active:scale-95 group">
                     <span class="material-symbols-outlined text-primary text-2xl">phone_iphone</span>
                     <div class="text-right flex flex-col">
@@ -422,7 +260,7 @@
                         <span class="font-display text-sm font-bold">نسخه iOS</span>
                     </div>
                 </a>
-                <!-- دکمه وب اپ -->
+                
                 <a href="https://amir-hormozi.github.io/AI-Habit-Tracker/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 bg-primary text-white hover:bg-opacity-90 rounded-full transition-all active:scale-95 group">
                     <span class="material-symbols-outlined text-2xl">language</span>
                     <div class="text-right flex flex-col">
@@ -430,6 +268,157 @@
                         <span class="font-display text-sm font-bold">نسخه وب (PWA)</span>
                     </div>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PWA Guide Section -->
+    <section class="py-20 px-6 bg-surface-container-low relative" id="pwa-guide">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl font-bold text-on-background mb-4">
+                    نصب نسخه وب (PWA)
+                </h2>
+                <p class="font-display text-base text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                    بدون نیاز به نصب از فروشگاه‌ها، آرا را تنها با چند لمس روی صفحه اصلی گوشی یا کامپیوتر خود اضافه کنید.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+
+                <!-- Android -->
+                <div class="flat-panel rounded-xl p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-secondary text-3xl">android</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-xl font-bold text-on-background">
+                                اندروید (Chrome)
+                            </h3>
+                            <p class="text-sm text-on-surface-variant">
+                                کمتر از ۳۰ ثانیه
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                                1
+                            </div>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                نسخه وب آرا را در مرورگر Chrome باز کنید.
+                            </p>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                                2
+                            </div>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                روی منوی سه نقطه (⋮) بزنید.
+                            </p>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                                3
+                            </div>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                گزینه <strong>Install App</strong> یا
+                                <strong>Add to Home Screen</strong>
+                                را انتخاب کنید.
+                            </p>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                                4
+                            </div>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                روی Install بزنید و از آرا مانند یک اپلیکیشن استفاده کنید.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- iPhone -->
+                <div class="flat-panel rounded-xl p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary text-3xl">phone_iphone</span>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-xl font-bold text-on-background">
+                                آیفون (Safari)
+                            </h3>
+                            <p class="text-sm text-on-surface-variant">
+                                فقط چند مرحله ساده
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                                1
+                            </div>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                آرا را با مرورگر Safari باز کنید.
+                            </p>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                                2
+                            </div>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                روی دکمه Share بزنید.
+                            </p>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                                3
+                            </div>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                گزینه <strong>Add to Home Screen</strong>
+                                را انتخاب کنید.
+                            </p>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold shrink-0">
+                                4
+                            </div>
+                            <p class="text-on-surface-variant leading-relaxed">
+                                روی Add بزنید تا آرا مانند یک اپلیکیشن روی صفحه اصلی نصب شود.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-10 flat-panel rounded-xl p-6 border-r-4 border-r-secondary">
+                <div class="flex items-start gap-3">
+                    <span class="material-symbols-outlined text-secondary text-3xl">
+                        lightbulb
+                    </span>
+                    <div>
+                        <h3 class="font-display text-lg font-bold text-on-background mb-2">
+                            مزایای نسخه PWA
+                        </h3>
+                        <ul class="space-y-2 text-on-surface-variant leading-relaxed">
+                            <li>✔ اجرا مانند یک اپلیکیشن واقعی</li>
+                            <li>✔ بدون نوار مرورگر</li>
+                            <li>✔ اجرای سریع‌تر</li>
+                            <li>✔ آیکون روی صفحه اصلی</li>
+                            <li>✔ دریافت بروزرسانی خودکار</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
